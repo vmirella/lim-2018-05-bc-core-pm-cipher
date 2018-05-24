@@ -8,7 +8,7 @@ La distribución de los objetos en el producto ha sido hecha de manera que el us
 manera intuitiva para ello también aparecerán textos  descriptivos que indiquen donde debe ingresar 
 el usuario sus textos.
 
-![alt text] (https://imageshack.com/a/img921/2868/6CDjAk.png)
+![alt text](https://imageshack.com/a/img921/2868/6CDjAk.png)
 
 
 * quiénes son los principales usuarios de producto
