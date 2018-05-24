@@ -7,36 +7,59 @@ window.cipher = {
     let textUpperCase = text.toUpperCase();
     //Separar el texto letra por letra
     let i;
-    let result ="";
-    for (i = 0, l=textUpperCase.length; i < l; i++) {
-      
-      result += textUpperCase[i] + " ";
+    let result = "";
+
+    for (i = 0, l = textUpperCase.length; i < l; i++) {
+      //Trasformo el caracter en ASCII
+      let characterAscii = textUpperCase[i].charCodeAt(0);
+      //Pregunta si es una letra mayuscula contemplando su codigo ASCII
+      if(characterAscii >= 65 && characterAscii <= 90){
+        /*Le resto 65 para tener su posicion en abecedario,
+        *le sumo el numero de posiciones a desplazarce para que tome el nuevo valor,
+        *Lo divido entre 26 y tomo el residuo (se divide entre 26 que es el numero de letras del abecedario para ahorrarse el recorrido atravez de este)*/
+        let valueEncode = (characterAscii - 65 + offset) % 26 + 65;
+        //Volver a convertir el ASCII en letra
+        let characterEncode = String.fromCharCode(valueEncode);
+        result += characterEncode;
+      }
+      else{
+        result += textUpperCase[i];
+      }
     }
-    //Trasformo el caracter en ASCII
-    //let characterAscii = character.charCodeAt(0);
-    /*Le resto 65 para tener su posicion en abecedario,
-     *le sumo el numero de posiciones a desplazarce para que tome el nuevo valor,
-     *Lo divido entre 26 y tomo el residuo (se divide entre 26 que es el numero de letras del abecedario para ahorrarse el recorrido atravez de este)*/
-    //let valueEncode = (characterAscii - 65 + offset) % 26 + 65;
-    //Volver a convertir el ASCII en letra
-    //let characterEncode = String.fromCharCode(valueEncode);
+
     //Retorna la letra encodificada
     return result;
   },
-  decode: function(character,offset) {
-    //Trasformo el caracter en ASCII
-    let characterAscii = character.charCodeAt(0);
-    /*Le resto 65 para tener su posicion en abecedario,
-     *le resto el numero de posiciones a desplazarce para que tome el nuevo valor,
-     *Lo divido entre 26 y tomo el residuo (se divide entre 26 que es el numero de letras del abecedario para ahorrarse el recorrido atravez de este)*/
-    let valueDecode = (characterAscii - 65 - offset) % 26 + 65;
-     //Volver a convertir el ASCII en letra
-     let characterDecode = String.fromCharCode(valueDecode);
-     //Retorna la letra decodificada
-    return characterDecode;
+  decode: function(text, offset){
+    //Trasformo el texto a mayusculas
+    let textUpperCase = text.toUpperCase();
+    //Separar el texto letra por letra
+    let i;
+    let result = "";
+
+    for (i = 0, l = textUpperCase.length; i < l; i++) {
+      //Trasformo el caracter en ASCII
+      let characterAscii = textUpperCase[i].charCodeAt(0);
+      //Pregunta si es una letra mayuscula contemplando su codigo ASCII
+      if(characterAscii >= 65 && characterAscii <= 90){
+        /*Le resto 65 para tener su posicion en abecedario,
+        *le resto el numero de posiciones a desplazarce para que tome el nuevo valor,
+        *Lo divido entre 26 y tomo el residuo (se divide entre 26 que es el numero de letras del abecedario para ahorrarse el recorrido atravez de este)*/
+        let valueEncode = (characterAscii - 65 - offset) % 26 + 65;
+        //Volver a convertir el ASCII en letra
+        let characterEncode = String.fromCharCode(valueEncode);
+        result += characterEncode;
+      }
+      else{
+        result += textUpperCase[i];
+      }
+    }
+
+    //Retorna la letra encodificada
+    return result;
   }
 };
-console.log(window.cipher.encode('esther', 5));
-//console.log(window.cipher.decode('D', 3));
+console.log(window.cipher.encode('hola, como  estas', 3));
+console.log(window.cipher.decode('KROD, FRPR  HVWDV', 3));
 //var texto = document.getElementById('texto').value;
 //document.getElementById('texto').value = 'Hola';
