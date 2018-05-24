@@ -1,4 +1,4 @@
-# Definición del producto
+﻿# Definición del producto
 
 En el `README.md` cuéntanos cómo pensaste en los usuarios al desarrollar tu
 producto y cuál fue tu proceso para definir el producto final a nivel de
@@ -8,7 +8,7 @@ La distribución de los objetos en el producto ha sido hecha de manera que el us
 manera intuitiva para ello también aparecerán textos  descriptivos que indiquen donde debe ingresar 
 el usuario sus textos.
 
-![alt GUI de cifrado C&eacute;sar] (https://imageshack.com/a/img921/2868/6CDjAk.png)
+![alt text] (https://imageshack.com/a/img921/2868/6CDjAk.png)
 
 
 * quiénes son los principales usuarios de producto
