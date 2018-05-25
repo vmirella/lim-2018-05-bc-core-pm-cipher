@@ -17,7 +17,7 @@ window.cipher = {
         /*Le resto 65 para tener su posicion en abecedario,
         *le sumo el numero de posiciones a desplazarce para que tome el nuevo valor,
         *Lo divido entre 26 y tomo el residuo (se divide entre 26 que es el numero de letras del abecedario para ahorrarse el recorrido atravez de este)*/
-        let valueEncode = (characterAscii - 65 + offset) % 26 + 65;
+        let valueEncode = (characterAscii + 65 + offset) % 26 + 65;
         //Volver a convertir el ASCII en letra
         let characterEncode = String.fromCharCode(valueEncode);
         result += characterEncode;
@@ -30,6 +30,7 @@ window.cipher = {
     //Retorna la letra encodificada
     return result;
   },
+  //Funcion que decodifica, recibe un texto y la cantidad de desplazamientos.
   decode: function(text, offset){
     //Trasformo el texto a mayusculas
     let textUpperCase = text.toUpperCase();
@@ -42,13 +43,13 @@ window.cipher = {
       let characterAscii = textUpperCase[i].charCodeAt(0);
       //Pregunta si es una letra mayuscula contemplando su codigo ASCII
       if(characterAscii >= 65 && characterAscii <= 90){
-        /*Le resto 65 para tener su posicion en abecedario,
+        /*Le sumo 65 para tener su posicion en abecedario,
         *le resto el numero de posiciones a desplazarce para que tome el nuevo valor,
         *Lo divido entre 26 y tomo el residuo (se divide entre 26 que es el numero de letras del abecedario para ahorrarse el recorrido atravez de este)*/
-        let valueEncode = (characterAscii - 64)- (offset % 26) + 64;
+        let valueDecode = (characterAscii + 65 - offset) % 26 + 65;
         //Volver a convertir el ASCII en letra
-        let characterEncode = String.fromCharCode(valueEncode);
-        result += characterEncode;
+        let characterDecode = String.fromCharCode(valueDecode);
+        result += characterDecode;
       }
       else{
         result += textUpperCase[i];
@@ -57,9 +58,10 @@ window.cipher = {
 
     //Retorna la letra encodificada
     return result;
+  },
+  createCipherWithOffset: function(){
+
   }
 };
-console.log(window.cipher.encode('ABCDEFGHIJKLMNOPQRSTUVWXYZ', 33));
-console.log(window.cipher.decode('HIJKLMNOPQRSTUVWXYZABCDEFG', 33));
-//var texto = document.getElementById('texto').value;
-//document.getElementById('texto').value = 'Hola';
+//console.log(window.cipher.encode('B', 1));
+//console.log(window.cipher.decode('HIJKLMNOPQRSTUVWXYZABCDEFG', 33));
