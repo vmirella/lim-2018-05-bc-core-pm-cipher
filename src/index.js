@@ -18,12 +18,12 @@ const result = document.getElementById('result');
 
 //Si se realiza el evento click llama a la funcion encode de cipher mandandole dos parametros texto y numero de desplazamientos.
 buttonEncode.addEventListener('click', () => {
-    result.value = window.cipher.encode(text.value, parseInt(offset.value));
+    result.value = window.cipher.encode(parseInt(offset.value), text.value);
 });
 
 //Si se realiza el evento click llama a la funcion decode de cipher mandandole dos parametros texto y numero de desplazamientos.
 buttonDecode.addEventListener('click', () => {
-    result.value = window.cipher.decode(text.value, parseInt(offset.value));
+    result.value = window.cipher.decode(parseInt(offset.value), text.value);
 });
 
 buttonClear.addEventListener('click', () => {
