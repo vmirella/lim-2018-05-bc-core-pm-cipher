@@ -13,7 +13,8 @@ body{
 }*/
 
 header{
-    background-color: #800000;
+    background-color:#4D856D;
+    color: #ffffff;
     width: 100%;
     padding: 20px 0;
 }
@@ -38,22 +39,42 @@ input[type="number"]{
 
 .divBotones {
     text-align: center;
+    color: #ffffff;
 }
 
-button{
+.buttons{
     margin: 0 20px;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
 }
+
+#encode{
+    background-color: #4C687D;
+}
+
+#decode{
+    background-color: #4C687D;
+}
+
+.clear{
+    background-color: #4D856D;
+}
+
+
 /*-------------------------------------pestañas----------------------------------------------*/
 /* Style the tab */
 .tab {
     overflow: hidden;
-    border: 1px solid #ffff00;
-    background-color: #ffff80;
+    border: 1px solid #ffffff;
+    box-sizing: border-box;
+    background-color:#ffffff;
+    margin-bottom: 0;
 }
 
 /* Style the buttons that are used to open the tab content */
 .tab button {
-    background-color: inherit;
+    background-color: #C29F71;
     float: left;
     border: none;
     outline: none;
@@ -64,19 +85,20 @@ button{
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-    background-color: #0000ff;
+    background-color:#C29F71;
 }
 
 /* Create an active/current tablink class */
 .tab button.active {
-    background-color: #00ff00;
+    background-color: #FFEED8;
 }
 
 /* Style the tab content */
 .tabcontent {
     display: none;
     padding: 6px 12px;
-    border: 1px solid #ffff00;
+    background-color: #FFEED8;
+    border: 1px solid #C29F71;
     border-top: none;
     box-sizing: border-box;
 }

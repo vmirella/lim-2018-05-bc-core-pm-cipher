@@ -120,5 +120,4 @@ window.cipher = {
     }
   }
 };
-//console.log(window.cipher.createCipherWithOffset(3).decode('B'));
-//console.log(window.cipher.decode('HIJKLMNOPQRSTUVWXYZABCDEFG', 33));
+
