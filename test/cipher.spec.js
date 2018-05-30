@@ -32,11 +32,11 @@ describe('cipher', () => {
   describe('cipher.createCipherWithOffset', () => {
 
     it('debería ser una función', () => {
-      assert.equal(typeof cipher.createCipherWithOffset, 'object');
+      assert.equal(typeof cipher.createCipherWithOffset, 'function');
     });
 
     it('debería retornar un objeto con dos funciones (encode y decode) con offset fijado', () => {
-      //assert.include(cipher.createCipherWithOffset, {encode});
+      assert.property(cipher.createCipherWithOffset, 'encode');
     });
       //assert.equal(cipher.createCipherWithOffset(33), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ');
   });

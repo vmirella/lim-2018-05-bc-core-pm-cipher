@@ -1,6 +1,6 @@
 body{
     margin: 0;
-    background-color:#f3f361;
+    background-color:#ffffff;
 }
 
 /*#root{
@@ -78,4 +78,5 @@ button{
     padding: 6px 12px;
     border: 1px solid #ffff00;
     border-top: none;
+    box-sizing: border-box;
 }

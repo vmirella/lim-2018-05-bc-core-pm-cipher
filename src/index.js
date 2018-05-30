@@ -1,56 +1,94 @@
-//Trae el objeto input offset
-const offset = document.getElementById('offset');
+// ------Traer objetos del DOM--------------------------------------------------
 
-//Trae el objeto textarea text
-const text = document.getElementById('text');
+// Objetos de la pestaña de ENCODE
 
-//Trae el objeto button encode
+// Trae el objeto input offsetEncode
+const offsetEncode = document.getElementById('offsetEncode');
+
+// Trae el objeto textarea textEncode
+const textEncode = document.getElementById('textEncode');
+
+// Trae el objeto button encode
 const buttonEncode = document.getElementById('encode');
 
-//Trae el objeto button decode
+// Trae el objeto button clearEncode
+const buttonClearEncode = document.getElementById('clearEncode');
+
+// Trae el objeto textarea resultEncode
+const resultEncode = document.getElementById('resultEncode');
+
+// Objetos de la pestaña de DECODE
+
+// Trae el objeto input offsetDecode
+const offsetDecode = document.getElementById('offsetDecode');
+
+// Trae el objeto textarea textDecode
+const textDecode = document.getElementById('textDecode');
+
+// Trae el objeto button decode
 const buttonDecode = document.getElementById('decode');
 
-//Trae el objeto button clear
-const buttonClear = document.getElementById('clear');
+// Trae el objeto button clearDecode
+const buttonClearDecode = document.getElementById('clearDecode');
 
-//Trae el objeto textarea result
-const result = document.getElementById('result');
+// Trae el objeto textarea resultDecode
+const resultDecode = document.getElementById('resultDecode');
 
-//Si se realiza el evento click llama a la funcion encode de cipher mandandole dos parametros texto y numero de desplazamientos.
+// Objetos de las pestañas
+
+const tabEncode = document.getElementById('tabEncode');
+const tabDecode = document.getElementById('tabDecode');
+const divEncode = document.getElementById('divEncode');
+const divDecode = document.getElementById('divDecode');
+
+
+// -----------Ejecutar eventos de botones---------------------------------------
+
+// Eventos de la pestaña ENCODE
+
+// Si se realiza el evento click llama a la funcion encode de cipher mandandole dos parametros texto y numero de desplazamientos.
 buttonEncode.addEventListener('click', () => {
-    result.value = window.cipher.createCipherWithOffset(parseInt(offset.value)).encode(text.value);
+    resultEncode.value = window.cipher.createCipherWithOffset(parseInt(offsetEncode.value)).encode(textEncode.value);
 });
 
-//Aqui objetos para segunda pestaña decode
+// Si se realiza el evento de click limpia las cajas
+buttonClearEncode.addEventListener('click', () => {
+    offsetEncode.value = "1";
+    textEncode.value = "";
+    resultEncode.value ="";
+});
 
-//Si se realiza el evento click llama a la funcion decode de cipher mandandole dos parametros texto y numero de desplazamientos.
+// Eventos de la pestaña DECODE
+
+// Si se realiza el evento click llama a la funcion decode de cipher mandandole dos parametros texto y numero de desplazamientos.
 buttonDecode.addEventListener('click', () => {
-    result.value = window.cipher.createCipherWithOffset(offset.value).decode(text.value);
+    resultDecode.value = window.cipher.createCipherWithOffset(offsetDecode.value).decode(textDecode.value);
 });
 
-buttonClear.addEventListener('click', () => {
-    offset.value = "1";
-    text.value = "";
-    result.value ="";
+// Si se realiza el evento de click limpia las cajas
+buttonClearDecode.addEventListener('click', () => {
+    offsetDecode.value = '1';
+    textDecode.value = '';
+    resultDecode.value = '';
 });
-//------------Pestañas-----------------------------
-function openTabbedContent(evt, idTabcontent) {
-    // Declare all variables
-    var i, tabcontent, tablinks;
 
-    // Get all elements with class="tabcontent" and hide them
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
 
-    // Get all elements with class="tablinks" and remove the class "active"
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
+// ------------Eventos de Pestañas-----------------------------
 
-    // Show the current tab, and add an "active" class to the button that opened the tab
-    document.getElementById(idTabcontent).style.display = "block";
-    evt.currentTarget.className += " active";
-}
+tabEncode.addEventListener('click', () => {
+    divEncode.style.display = 'block';
+    divDecode.style.display = 'none';
+    tabEncode.classList.add('active');
+    tabDecode.classList.remove('active');
+});
+
+tabDecode.addEventListener('click', () => {
+    divDecode.style.display = 'block';
+    divEncode.style.display = 'none';
+    tabDecode.classList.add('active');
+    tabEncode.classList.remove('active');
+});
+
+window.onload = () => {
+    tabEncode.click();
+};
