@@ -1,27 +1,54 @@
+@font-face {
+	font-family: 'norwester';
+	src: url('fonts/norwester.eot');
+	src: local('☺'), url('fonts/norwester.woff') format('woff'), url('fonts/norwester.ttf') format('truetype'), url('fonts/norwester.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'roboto-bold';
+	src: url('fonts/Roboto-Bold.eot');
+	src: local('☺'), url('fonts/Roboto-Bold.woff') format('woff'), url('fonts/Roboto-Bold.ttf') format('truetype'), url('fonts/Roboto-Bold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'lato-bold';
+	src: url('fonts/Lato-Bold.eot');
+	src: local('☺'), url('fonts/Lato-Bold.woff') format('woff'), url('fonts/Lato-Bold.ttf') format('truetype'), url('fonts/Lato-Bold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
 body{
     margin: 0;
     background-color:#ffffff;
+    font-size: 24px;
+    font-family: 'lato-bold';
 }
 
-/*#root{
-    max-width: 800px;
-    padding: 20px 40px;
+#root{
+    max-width: 1200px;
     box-sizing: border-box;
     margin: 0 auto;
-    border: 2px solid #000000;
-    background-color: #4fafb7;
-}*/
+    width: 100%;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
 
 header{
     background-color:#4D856D;
     color: #ffffff;
     width: 100%;
-    padding: 20px 0;
+    padding: 5px 0;
 }
 
 h1{
     text-align: center;
-    margin: 0;
+    font-size: 52px;
+    font-family: 'norwester';
 }
 
 div{
@@ -31,10 +58,16 @@ div{
 
 textarea{
     width: 100%;
+    margin-top: 10px;
+    font-size: 20px;
 }
 
-input[type="number"]{
+input[type='number']{
     margin-left: 20px;
+    width: 150px;
+    height: 28px;
+    text-align: center;
+    font-size: 24px;
 }
 
 .divBotones {
@@ -44,9 +77,23 @@ input[type="number"]{
 
 .buttons{
     margin: 0 20px;
-    width: 100px;
-    height: 30px;
+    width: 220px;
+    height: 65px;
     border-radius: 5px;
+    font-size: 26px;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    font-family: 'roboto-bold';
+}
+
+.buttons img{
+    width: 35px;
+    height: auto;
+    position: absolute;
+    top: 10px;
+    left: 12px;
 }
 
 #encode{
@@ -65,22 +112,36 @@ input[type="number"]{
 /*-------------------------------------pestañas----------------------------------------------*/
 /* Style the tab */
 .tab {
-    overflow: hidden;
-    border: 1px solid #ffffff;
     box-sizing: border-box;
     background-color:#ffffff;
     margin-bottom: 0;
+    margin-top: 20px;
+    position: relative;
+}
+
+.tab img{
+    position: absolute;
+    top: -56px;
+    left: 465px;
+}
+
+.tablinks{
+    margin-right: 15px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    width: 190px;
+    height: 50px;
+    font-size: 24px;
+    font-family: 'roboto-bold';
 }
 
 /* Style the buttons that are used to open the tab content */
 .tab button {
     background-color: #C29F71;
-    float: left;
     border: none;
     outline: none;
     cursor: pointer;
     padding: 14px 16px;
-    transition: 0.3s;
 }
 
 /* Change background color of buttons on hover */
@@ -96,9 +157,8 @@ input[type="number"]{
 /* Style the tab content */
 .tabcontent {
     display: none;
-    padding: 6px 12px;
+    padding: 30px 20px;
     background-color: #FFEED8;
-    border: 1px solid #C29F71;
     border-top: none;
     box-sizing: border-box;
 }

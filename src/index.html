@@ -6,50 +6,57 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-        <h1>Cifrado César</h1>
-    </header>
-    <!-- Tab links -->
-    <div class="tab">
-    <button class="tablinks" id="tabEncode">Cifrar</button>
-    <button class="tablinks" id="tabDecode">Descifrar</button>
+    <div id="root">
+      <header>
+          <h1>CIFRADO CESAR</h1>
+      </header>
+      <!-- Tab links -->
+      <div class="tab">
+        <button class="tablinks" id="tabEncode">Cifrar</button>
+        <button class="tablinks" id="tabDecode">Descifrar</button>
+        <img src="images/detective_centro.png">
+      </div>
+    
+      <!-- Tab content -->
+      <div id="divEncode" class="tabcontent">
+        <div>
+          <label for="offsetEncode">Desplazamientos</label>
+          <input type="number" id="offsetEncode" value="1" min="1">
+        </div>
+        <div>
+          <label for="textEncode">Mensaje</label>
+          <textarea id="textEncode" cols="30" rows="6" placeholder="Ingrese aquí el texto que quiere cifrar"></textarea>
+        </div>
+        <div class="divBotones">
+          <button id="encode" class="buttons"><img src="images/encode.png">Cifrar</button>
+          <button id="clearEncode" class="buttons clear"><img src="images/clean.png">Limpiar</button>
+        </div>
+        <div>
+          <label for="resultEncode">Resultado</label>
+          <textarea id="resultEncode" cols="30" rows="6" placeholder="Aquí se visualizarán tus resultados" readonly></textarea>
+        </div> 
+      </div>
+    
+      <div id="divDecode" class="tabcontent">
+        <div>
+          <label for="offsetDecode">Desplazamientos</label>
+          <input type="number" id="offsetDecode" value="1" min="1">
+        </div>
+        <div>
+          <label for="textDecode">Mensaje</label>
+          <textarea id="textDecode" cols="30" rows="6" placeholder="Ingrese aquí el texto que quiere descifrar"></textarea>
+        </div>
+        <div class="divBotones">
+          <button id="decode" class="buttons"><img src="images/decode.png">Descifrar</button>
+          <button id="clearDecode" class="buttons clear"><img src="images/clean.png">Limpiar</button>
+        </div>
+        <div>
+          <label for="resultDecode">Resultado</label>
+          <textarea id="resultDecode" cols="30" rows="6" placeholder="Aquí se visualizarán tus resultados" readonly></textarea>
+        </div> 
+      </div>
     </div>
-  
-    <!-- Tab content -->
-    <div id="divEncode" class="tabcontent">
-      <div>
-        <label for="offsetEncode">Desplazamientos</label>
-        <input type="number" id="offsetEncode" value="1" min="1">
-      </div>
-      <div>
-        <textarea id="textEncode" cols="30" rows="10" placeholder="Ingrese aquí el texto que quiere cifrar"></textarea>
-      </div>
-      <div class="divBotones">
-        <button id="encode" class="buttons">Codificar</button>
-        <button id="clearEncode" class="buttons clear">Limpiar</button>
-      </div>
-      <div>
-        <textarea id="resultEncode" cols="30" rows="10" placeholder="Aquí se visualizarán tus resultados" readonly></textarea>
-      </div> 
-    </div>
-  
-    <div id="divDecode" class="tabcontent">
-      <div>
-        <label for="offsetDecode">Desplazamientos</label>
-        <input type="number" id="offsetDecode" value="1" min="1">
-      </div>
-      <div>
-        <textarea id="textDecode" cols="30" rows="10" placeholder="Ingrese aquí el texto que quiere descifrar"></textarea>
-      </div>
-      <div class="divBotones">
-        <button id="decode" class="buttons">Decodificar</button>
-        <button id="clearDecode" class="buttons clear">Limpiar</button>
-      </div>
-      <div>
-        <textarea id="resultDecode" cols="30" rows="10" placeholder="Aquí se visualizarán tus resultados" readonly></textarea>
-      </div> 
-    </div>
-  <!-- ------------------------>
+
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>
