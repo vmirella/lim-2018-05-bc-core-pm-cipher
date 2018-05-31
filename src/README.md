@@ -1,12 +1,8 @@
 ﻿# Definición del producto
-
-En el `README.md` cuéntanos cómo pensaste en los usuarios al desarrollar tu
-producto y cuál fue tu proceso para definir el producto final a nivel de
-experiencia y de interfaz.
-
+El producto 
 La distribución de los objetos en el producto ha sido hecha de manera que el usuario pueda usarlos de 
-manera intuitiva para ello también aparecerán textos  descriptivos que indiquen donde debe ingresar 
-el usuario sus textos.
+manera intuitiva para ello he implementado pestañas para cada función, aparecerán textos  descriptivos que indiquen donde debe ingresar 
+el usuario sus mensajes así como donde el podra visualizar sus resultados.
 
 ![alt text](https://imageshack.com/a/img921/2868/6CDjAk.png)
 
