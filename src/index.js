@@ -15,7 +15,6 @@ const tabDecode = document.getElementById('tabDecode');
 const divEncode = document.getElementById('divEncode');
 const divDecode = document.getElementById('divDecode');
 
-
 buttonEncode.addEventListener('click', () => {
     resultEncode.value = window.cipher.createCipherWithOffset(parseInt(offsetEncode.value)).encode(textEncode.value);
 });
