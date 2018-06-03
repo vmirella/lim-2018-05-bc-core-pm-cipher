@@ -16,7 +16,7 @@ const divEncode = document.getElementById('divEncode');
 const divDecode = document.getElementById('divDecode');
 
 buttonEncode.addEventListener('click', () => {
-    resultEncode.value = window.cipher.createCipherWithOffset(parseInt(offsetEncode.value)).encode(textEncode.value);
+    resultEncode.value = cipher.createCipherWithOffset(parseInt(offsetEncode.value)).encode(textEncode.value);
 });
 
 buttonClearEncode.addEventListener('click', () => {
@@ -26,7 +26,7 @@ buttonClearEncode.addEventListener('click', () => {
 });
 
 buttonDecode.addEventListener('click', () => {
-    resultDecode.value = window.cipher.createCipherWithOffset(offsetDecode.value).decode(textDecode.value);
+    resultDecode.value = cipher.createCipherWithOffset(offsetDecode.value).decode(textDecode.value);
 });
 
 buttonClearDecode.addEventListener('click', () => {
