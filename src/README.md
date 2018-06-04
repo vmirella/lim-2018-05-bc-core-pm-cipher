@@ -19,7 +19,7 @@ Si bien en la imagen de arriba se aprecia un trabajo logrado este ha tomado vari
 Este lo realic&eacute; solo en base al an&aacute;lisis del problema que se nos plante&oacute;. Use la herramienta quick-mockup.
 ![alt text](images/boceto.png)
 
-### Primera versi&oacuten
+### Primera versi&oacute;n
 Implemente la primera versi&oacute;n previo feedback con mi grupo y tratando de cumplir los requerimientos mínimos para realizar una versi&oacute;n entregable.
 
 ![alt text](images/interfaz1.PNG)
