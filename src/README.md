@@ -17,12 +17,12 @@ Si bien en la imagen de arriba se aprecia un trabajo logrado este ha tomado vari
 
 ### Primer boceto
 Este lo realiz&eacute; solo en base al an&aacute;lisis del problema que se nos plante&oacute;. Use la herramienta quick-mockup.
-![alt text](images/prototipo.png)
+![alt text](images/boceto.png)
 
 ### Primera version
 Implemente la primera versi&oacute;n previo feedback con mi grupo y tratando de cumplir los requerimientos mínimos para realizar una versi&oacute;n entregable.
 
-![alt text](images/interfaz.PNG)
+![alt text](images/interfaz1.PNG)
 
 Al presentarlo recib&iacute; feedback de mi trainig - manager aqu&iacute; me hizo ver que algunos texto no eran lo suficientemente descriptivos y que la posici&oacute;n de los botones le causaba confusi&oacute;n de como flu&iacute;a el proceso de la p&aacute;gina.
 
@@ -41,13 +41,13 @@ Para desarrollar los wireframe use marvel-tool
 ![alt text](images/wireframe_high_fi.PNG)
 
 Este &uacute;ltimo prototipo fue implementado y probado all&iacute; se sugiri&oacute; los siguientes puntos:
-```
+
 - Usar la palabra encriptar y desencriptar en vez de cifrar y decifrar(Las primeras resultaban m&aacute;s amigables).
 - Usar colores m&aacute;s amigables.
 - Hacer los textos aun mas descriptivos, de aquí parti&oacute; la idea de hacer un tooltip para el offset que se ingresar&iacute;a.
 
 ![alt text](images/feedback.PNG)
-```
+
 
 ## * Principales usuarios de producto
 
