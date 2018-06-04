@@ -19,7 +19,7 @@ Si bien en la imagen de arriba se aprecia un trabajo logrado este ha tomado vari
 Este lo realic&eacute; solo en base al an&aacute;lisis del problema que se nos plante&oacute;. Use la herramienta quick-mockup.
 ![alt text](images/boceto.png)
 
-### Primera version
+### Primera versi&oacuten
 Implemente la primera versi&oacute;n previo feedback con mi grupo y tratando de cumplir los requerimientos mínimos para realizar una versi&oacute;n entregable.
 
 ![alt text](images/interfaz1.PNG)
@@ -27,7 +27,7 @@ Implemente la primera versi&oacute;n previo feedback con mi grupo y tratando de 
 Al presentarlo recib&iacute; feedback de mi training - manager aqu&iacute; me hizo ver que algunos texto no eran lo suficientemente descriptivos y que la posici&oacute;n de los botones le causaba confusi&oacute;n de como flu&iacute;a el proceso de la p&aacute;gina.
 
 ### Segundo Boceto
-Entonces realic&eacute; un segundo boceto y para resolver el problema de la confusi&oacute;n del proceso de cifrado con el de descifrado opt&eacute; por ordenar los procesos separandolos uno en cada pesta&ntilde;a donde a cada proceso se les asignar&iacute;a sus respectivos objetos independiente del otro. Opt&eacute; por las pestañas y no por poner dos formularios uno a continuaci&oacute;n del otro (ya sea en forma vertical u horizontal) porque este trabajo se plantea mas que nada para celular y esa clase distribuciones ser&iacute;an poco convenientes.
+Entonces realic&eacute; un segundo boceto y para resolver el problema de la confusi&oacute;n del proceso de cifrado con el de descifrado opt&eacute; por ordenar los procesos separ&aacute;ndolos uno en cada pesta&ntilde;a donde a cada proceso se les asignar&iacute;a sus respectivos objetos independiente del otro. Opt&eacute; por las pestañas y no por poner dos formularios uno a continuaci&oacute;n del otro (ya sea en forma vertical u horizontal) porque este trabajo se plantea mas que nada para celular y esa clase distribuciones ser&iacute;an poco convenientes.
 
 ![alt text](images/boceto2.PNG)
 
@@ -38,6 +38,8 @@ Para desarrollar los wireframe use marvel-tool
 ![alt text](images/wireframe_low_fi.PNG)
 
 #### high-fi
+Para la elecci&oacute; de la paleta del color me base en la teoría del color desde el punto de vista psicol&oacute;gico. Eleg&iacute; el verde como color base porque transmite confianza en la seguridad.
+
 ![alt text](images/wireframe_high_fi.PNG)
 
 Este &uacute;ltimo prototipo fue implementado y probado all&iacute; se sugiri&oacute; los siguientes puntos:
