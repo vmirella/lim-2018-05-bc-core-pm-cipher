@@ -16,7 +16,7 @@ el usuario sus mensajes as&iacute; como donde el podra visualizar sus resultados
 Si bien en la imagen de arriba se aprecia un trabajo logrado este ha tomado varias fases las cuales se pueden apreciar a continuaci&oacute;n:
 
 ### Primer boceto
-Este lo realiz&eacute; solo en base al an&aacute;lisis del problema que se nos plante&oacute;. Use la herramienta quick-mockup.
+Este lo realic&eacute; solo en base al an&aacute;lisis del problema que se nos plante&oacute;. Use la herramienta quick-mockup.
 ![alt text](images/boceto.png)
 
 ### Primera version
