@@ -4,54 +4,54 @@
     <meta charset="utf-8">
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel=icon href=images/icono.png sizes="32X32" type="image/png">
   </head>
   <body>
     <div id="root">
       <header>
-          <h1>CIFRADO CESAR</h1>
-          <h2>Programa de cifrado</h2>
+          <h1>ENCRIPTADO CESAR</h1>
       </header>
       <div class="tab">
-        <button class="tablinks" id="tabEncode">Cifrar</button>
-        <button class="tablinks" id="tabDecode">Descifrar</button>
+        <button class="tablinks" id="tabEncode">Encriptar</button>
+        <button class="tablinks" id="tabDecode">Desencriptar</button>
         <img src="images/detective_centro.png">
       </div>
     
       <div id="divEncode" class="tabcontent">
         <div>
-          <label for="offsetEncode">Desplazamientos <a class='tooltip'>? <span class="tooltiptext">Espacios que se desplaza<br>en el abecedario</span></a></label>
+          <label for="offsetEncode">Clave <a class='tooltip'>? <span class="tooltiptext">Indica cuántas posiciones queremos que el cifrado desplace cada caracter</span></a></label>
           <input type="number" id="offsetEncode" value="1" min="1">
         </div>
         <div>
           <label for="textEncode">Mensaje</label>
-          <textarea id="textEncode" cols="30" rows="6" placeholder="Ingrese aquí el mensaje que quiere cifrar"></textarea>
+          <textarea id="textEncode" cols="30" rows="6" placeholder="Ingrese aquí el mensaje que quiere encriptar"></textarea>
         </div>
         <div class="divBotones">
-          <button id="encode" class="buttons"><img src="images/encode.png">Cifrar</button>
+          <button id="encode" class="buttons"><img src="images/encode.png">Encriptar</button>
           <button id="clearEncode" class="buttons clear"><img src="images/clean.png">Limpiar</button>
         </div>
         <div>
           <label for="resultEncode">Resultado</label>
-          <textarea id="resultEncode" cols="30" rows="6" placeholder="Aquí se visualizarán tus resultados" disabled></textarea>
+          <textarea id="resultEncode" cols="30" rows="6" placeholder="Mensaje encriptado" disabled></textarea>
         </div> 
       </div>
     
       <div id="divDecode" class="tabcontent">
         <div>
-          <label for="offsetDecode">Desplazamientos</label>
+          <label for="offsetDecode">Clave <a class='tooltip'>? <span class="tooltiptext">Indica cuántas posiciones queremos que el cifrado desplace cada caracter</span></a></label>
           <input type="number" id="offsetDecode" value="1" min="1">
         </div>
         <div>
           <label for="textDecode">Mensaje</label>
-          <textarea id="textDecode" cols="30" rows="6" placeholder="Ingrese aquí el mensaje que quiere descifrar"></textarea>
+          <textarea id="textDecode" cols="30" rows="6" placeholder="Ingrese aquí el mensaje que quiere desencriptar"></textarea>
         </div>
         <div class="divBotones">
-          <button id="decode" class="buttons"><img src="images/decode.png">Descifrar</button>
+          <button id="decode" class="buttons"><img src="images/decode.png">Desencriptar</button>
           <button id="clearDecode" class="buttons clear"><img src="images/clean.png">Limpiar</button>
         </div>
         <div>
           <label for="resultDecode">Resultado</label>
-          <textarea id="resultDecode" cols="30" rows="6" placeholder="Aquí se visualizarán tus resultados" disabled></textarea>
+          <textarea id="resultDecode" cols="30" rows="6" placeholder="Mensaje desencriptado" disabled></textarea>
         </div> 
       </div>
     </div>

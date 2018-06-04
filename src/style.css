@@ -40,7 +40,7 @@ body{
 }
 
 header{
-    background-color:#4D856D;
+    background-color:#007734;
     color: #ffffff;
     width: 100%;
     padding: 5px 0;
@@ -50,12 +50,6 @@ h1{
     text-align: center;
     font-size: 52px;
     font-family: 'norwester';
-    margin-bottom: 0px;
-}
-
-h2{
-    text-align: center;
-    font-size: 20px;
 }
 
 div{
@@ -77,7 +71,7 @@ div{
 
 .tooltip .tooltiptext {
     visibility: hidden;
-    width: 250px;
+    width: 320px;
     background-color: black;
     color: #fff;
     text-align: center;
@@ -124,9 +118,9 @@ input[type='number']{
 
 .buttons{
     margin: 0 20px;
-    width: 220px;
+    width: 250px;
     height: 65px;
-    border-radius: 5px;
+    border-radius: 10px;
     font-size: 26px;
     color: #ffffff;
     font-weight: bold;
@@ -144,15 +138,15 @@ input[type='number']{
 }
 
 #encode{
-    background-color: #4C687D;
+    background-color: #1D6D93;
 }
 
 #decode{
-    background-color: #4C687D;
+    background-color: #E94E25;
 }
 
 .clear{
-    background-color: #4D856D;
+    background-color: #008C3D;
 }
 
 .tab {
@@ -180,25 +174,21 @@ input[type='number']{
 }
 
 .tab button {
-    background-color: #C29F71;
+    background-color: #CF9756;
     border: none;
     outline: none;
     cursor: pointer;
     padding: 14px 16px;
 }
 
-.tab button:hover {
-    background-color:#C29F71;
-}
-
 .tab button.active {
-    background-color: #FFEED8;
+    background-color: #FFDFBA;
 }
 
 .tabcontent {
     display: none;
     padding: 30px 20px;
-    background-color: #FFEED8;
+    background-color: #FFDFBA;
     border-top: none;
     box-sizing: border-box;
 }

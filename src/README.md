@@ -1,31 +1,66 @@
-﻿# Definición del producto
-Este producto le brinda al usuario la opcion de cifrar y descifrar sus mensajes para
-poder comunicarse en forma secreta. Para el desarrollo del producto se ha usado como base el cifrado Cesar.
+﻿# Definici&oacute;n del producto
+Este producto le brinda al usuario la opci&oacute;n de cifrar y descifrar sus mensajes para
+poder comunicarse en forma secreta. Para el desarrollo del producto se ha usado como base el cifrado C&eacute;sar.
 
-## ¿Que es el cifrado Cesar?
-El Cifrado de Cesar es uno de los métodos de codificación conocidos más antiguos. Es muy simple sólo se cambian las posiciones del alfabeto. La transformación se denomina ROTN, donde N es el valor de cambio de posiciones y ROT significa "ROTAR", por que es un cambio cíclico. Los símbolos no-alfabéticos como espacios y dígitos no cambian.
+## ¿Qu&eacute; es el cifrado C&eacute;sar?
+El Cifrado de C&eacute;sar es uno de los m&eacute;todos de codificaci&oacute;n conocidos m&aacute;s antiguos. Es muy simple s&oacute;lo se cambian las posiciones del alfabeto. La transformaci&oacute;n se denomina ROTN, donde N es el valor de cambio de posiciones y ROT significa "ROTAR", por que es un cambio c&iacute;clico. Los s&iacute;mbolos no-alfab&eacute;ticos como espacios y d&iacute;gitos no cambian.
 
-## Proceso de definicion el producto final a nivel de experiencia y de interfaz.
-La distribución de los objetos en el producto ha sido construida con el fin de que el usuario pueda usarlos de 
-manera intuitiva; para ello se ha implementado pestañas para cada función. aparecerán textos  descriptivos que indiquen donde debe ingresar 
-el usuario sus mensajes así como donde el podra visualizar sus resultados.
+## Proceso de definici&oacute;n del producto final a nivel de experiencia y de interfaz.
 
-![alt text](https://imageshack.com/a/img921/2868/6CDjAk.png)
+La distribuci&oacute;n de los objetos en el producto ha sido construida con el fin de que el usuario pueda usarlos de 
+manera intuitiva; para ello se ha implementado pestañas para cada funci&oacute;n. aparecer&aacute;n textos descriptivos que indiquen donde debe ingresar 
+el usuario sus mensajes as&iacute; como donde el podra visualizar sus resultados. Siendo este el resultado final:
 
+![alt text](images/wireframe_high_fi_2.PNG)
+
+Si bien en la imagen de arriba se aprecia un trabajo logrado este ha tomado varias fases las cuales se pueden apreciar a continuaci&oacute;n:
+
+### Primer boceto
+Este lo realiz&eacute; solo en base al an&aacute;lisis del problema que se nos plante&oacute;. Use la herramienta quick-mockup.
+![alt text](images/prototipo.png)
+
+### Primera version
+Implemente la primera versi&oacute;n previo feedback con mi grupo y tratando de cumplir los requerimientos mínimos para realizar una versi&oacute;n entregable.
+
+![alt text](images/interfaz.PNG)
+
+Al presentarlo recib&iacute; feedback de mi trainig - manager aqu&iacute; me hizo ver que algunos texto no eran lo suficientemente descriptivos y que la posici&oacute;n de los botones le causaba confusi&oacute;n de como flu&iacute;a el proceso de la p&aacute;gina.
+
+### Segundo Boceto
+Entonces realiz&eacute; un segundo boceto y para resolver el problema de la confusi&oacute;n del proceso de cifrado con el de descifrado opt&eacute; por ordenar los procesos separandolos uno en cada pesta&ntilde;a donde a cada proceso se les asignar&iacute;a sus respectivos objetos independiente del otro. Opt&eacute; por las pestañas y no por poner dos formularios uno a continuaci&oacute;n del otro (ya sea en forma vertical u horizontal) porque este trabajo se plantea mas que nada para celular y esa clase distribuciones ser&iacute;an poco convenientes.
+
+![alt text](images/boceto2.PNG)
+
+### Wireframes
+Para desarrollar los wireframe use marvel-tool
+
+#### low-fi
+![alt text](images/wireframe_low_fi.PNG)
+
+#### high-fi
+![alt text](images/wireframe_high_fi.PNG)
+
+Este &uacute;ltimo prototipo fue implementado y probado all&iacute; se sugiri&oacute; los siguientes puntos:
+```
+- Usar la palabra encriptar y desencriptar en vez de cifrar y decifrar(Las primeras resultaban m&aacute;s amigables).
+- Usar colores m&aacute;s amigables.
+- Hacer los textos aun mas descriptivos, de aquí parti&oacute; la idea de hacer un tooltip para el offset que se ingresar&iacute;a.
+
+![alt text](images/feedback.PNG)
+```
 
 ## * Principales usuarios de producto
 
 El usuario del producto seria aquella persona que quiera mantener sus mensajes en secreto
 en este caso particular serían los invitados a la fiesta sorpresa y yo.
 
-## * Expectativas del usuario en relación al producto
+## * Expectativas del usuario en relaci&oacute;n al producto
 
-La expectativa del usuario en relación al producto es poder comunicarse sin ser descubiertos.
+La expectativa del usuario en relaci&oacute;n al producto es poder comunicarse sin ser descubiertos.
 
-## * cómo crees que el producto que estás creando les está resolviendo sus
-  problemas
+## * c&oacute;mo crees que el producto que est&aacute;s creando les est&aacute; resolviendo sus problemas
 
 El producto resuelve sus problemas ya que hace que sus mensajes sean inintelegibles para el cumpleañero
 como para cualquiera que los lee y no sabe de la fiesta sorpresa, como lo hace les permite encodificar
-sus mensajes y también les permite decodificarlos usando el cifrado Cesar y dándoles la opción de elegir
-con cuantos desplazamientos este se aplicará.
+sus mensajes y también les permite decodificarlos usando el cifrado Cesar y d&aacute;ndoles la opci&oacute;n de elegir
+con cuantos desplazamientos este se aplicar&aacute;.
