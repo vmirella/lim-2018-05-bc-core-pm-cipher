@@ -24,10 +24,10 @@ Implemente la primera versi&oacute;n previo feedback con mi grupo y tratando de 
 
 ![alt text](images/interfaz1.PNG)
 
-Al presentarlo recib&iacute; feedback de mi trainig - manager aqu&iacute; me hizo ver que algunos texto no eran lo suficientemente descriptivos y que la posici&oacute;n de los botones le causaba confusi&oacute;n de como flu&iacute;a el proceso de la p&aacute;gina.
+Al presentarlo recib&iacute; feedback de mi training - manager aqu&iacute; me hizo ver que algunos texto no eran lo suficientemente descriptivos y que la posici&oacute;n de los botones le causaba confusi&oacute;n de como flu&iacute;a el proceso de la p&aacute;gina.
 
 ### Segundo Boceto
-Entonces realiz&eacute; un segundo boceto y para resolver el problema de la confusi&oacute;n del proceso de cifrado con el de descifrado opt&eacute; por ordenar los procesos separandolos uno en cada pesta&ntilde;a donde a cada proceso se les asignar&iacute;a sus respectivos objetos independiente del otro. Opt&eacute; por las pestañas y no por poner dos formularios uno a continuaci&oacute;n del otro (ya sea en forma vertical u horizontal) porque este trabajo se plantea mas que nada para celular y esa clase distribuciones ser&iacute;an poco convenientes.
+Entonces realic&eacute; un segundo boceto y para resolver el problema de la confusi&oacute;n del proceso de cifrado con el de descifrado opt&eacute; por ordenar los procesos separandolos uno en cada pesta&ntilde;a donde a cada proceso se les asignar&iacute;a sus respectivos objetos independiente del otro. Opt&eacute; por las pestañas y no por poner dos formularios uno a continuaci&oacute;n del otro (ya sea en forma vertical u horizontal) porque este trabajo se plantea mas que nada para celular y esa clase distribuciones ser&iacute;an poco convenientes.
 
 ![alt text](images/boceto2.PNG)
 
@@ -51,7 +51,7 @@ Este &uacute;ltimo prototipo fue implementado y probado all&iacute; se sugiri&oa
 
 ## * Principales usuarios de producto
 
-El usuario del producto seria aquella persona que quiera mantener sus mensajes en secreto
+El usuario del producto ser&iacute;a aquella persona que quiera mantener sus mensajes en secreto
 en este caso particular serían los invitados a la fiesta sorpresa y yo.
 
 ## * Expectativas del usuario en relaci&oacute;n al producto
@@ -62,5 +62,5 @@ La expectativa del usuario en relaci&oacute;n al producto es poder comunicarse s
 
 El producto resuelve sus problemas ya que hace que sus mensajes sean inintelegibles para el cumpleañero
 como para cualquiera que los lee y no sabe de la fiesta sorpresa, como lo hace les permite encodificar
-sus mensajes y también les permite decodificarlos usando el cifrado Cesar y d&aacute;ndoles la opci&oacute;n de elegir
+sus mensajes y también les permite decodificarlos usando el cifrado C&eacute;sar y d&aacute;ndoles la opci&oacute;n de elegir
 con cuantos desplazamientos este se aplicar&aacute;.
