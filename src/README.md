@@ -1,4 +1,26 @@
-﻿# Definici&oacute;n del producto
+﻿# Manual de usuario
+
+## Paso 1: Encriptar
+Para encriptar un texto primero vamos a la primera pestaña.
+- Elegimos un n&uacute;mero el cual nos servir&aacute; como base de encriptaci&oacute;n.
+- Ingresamos el texto deseado en la primera caja de texto.
+- Presionamos el bot&oacute;n encriptar.
+- El mensaje encriptado se mostrar&aacute; en la &uacute;ltima caja de texto.
+- El bot&oacute;n limpiar borrar&aacute; los textos preparando el programa para codificar el siguiente mensaje.
+
+![alt text](images/paso1.png)
+
+## Paso 1: Desencriptar
+Para desencriptar un texto vamos a la segunda pestaña.
+- Elegimos un n&uacute;mero el cual debe ser el mismo que usamos al momento de encriptar.
+- Ingresamos el texto encriptado en la primera caja de texto.
+- Presionamos el bot&oacute;n desencriptar.
+- El mensaje desencriptado se mostrar&aacute; en la &uacute;ltima caja de texto.
+- El bot&oacute;n limpiar borrar&aacute; los textos preparando el programa para decodificar el siguiente mensaje.
+
+![alt text](images/paso2.png)
+
+# Definici&oacute;n del producto
 Este producto le brinda al usuario la opci&oacute;n de cifrar y descifrar sus mensajes para
 poder comunicarse en forma secreta. Para el desarrollo del producto se ha usado como base el cifrado C&eacute;sar.
 
@@ -38,7 +60,7 @@ Para desarrollar los wireframe use marvel-tool
 ![alt text](images/wireframe_low_fi.PNG)
 
 #### high-fi
-Para la elecci&oacute; de la paleta del color me base en la teoría del color desde el punto de vista psicol&oacute;gico. Eleg&iacute; el verde como color base porque transmite confianza en la seguridad.
+Para la elecci&oacute;n de la paleta del color me base en la teoría del color desde el punto de vista psicol&oacute;gico. Eleg&iacute; el verde como color base porque transmite confianza en la seguridad.
 
 ![alt text](images/wireframe_high_fi.PNG)
 
